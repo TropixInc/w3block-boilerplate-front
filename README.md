@@ -1,34 +1,121 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# W3block boilerplate
 
-First, run the development server:
+Esse repositório visa ser um boilerplate para todos que desejarem integrar suas empresas junto a W3block. Nele voce vai encontrar o necessário para isso, junto com algumas outras configurações já feitas para maior facilidade na hora do desenvolvimento.
+
+## Stack
+
+**Prettier**
+
+**Eslint** 
+
+**Husky** 
+
+**TailwindCSS** 
+
+**ReviewDog** 
+
+**W3block SDK** 
+
+
+## Start
+Para que se possa rodar o projeto alguns staps tem de ser feitos como requisitos mínimos:
 
 ```bash
-npm run dev
-# or
+npm install
+```
+ou
+```bash
+yarn install
+```
+
+depois de todas as dependecias instaladas o projeto pode rodar normalmente
+
+```bash
+  npm run dev
+```
+
+ou 
+
+```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Por padrão o projeto ficará disponivel na porta 3000 (localhost:3000)**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Variáveis de ambiente
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Para Rodar esse projeto com o SDK funcionando é extremamente importante que as variáveis de ambiente estejam configuradas corretamente.
+As variáveis utilizadas são:
 
-## Learn More
+`NEXT_PUBLIC_COMMERCE_API_URL`
 
-To learn more about Next.js, take a look at the following resources:
+`NEXT_PUBLIC_PDF_API_URL`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`NEXT_PUBLIC_PIXWAY_KEY_API_URL`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`NEXT_PUBLIC_PIXWAY_ID_API_URL`
 
-## Deploy on Vercel
+`NEXT_PUBLIC_NEXTAUTH_SECRET`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`NEXT_PUBLIC_COMPANY_ID`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`NEXT_PUBLIC_ENVIRONMENT`
+
+`NEXT_PUBLIC_BASE_URL`
+
+`NEXTAUTH_URL`
+
+
+Em caso de dúvida entrar em contato com a equipe responsável
+
+## Hooks
+
+Hooks importante do projeto:
+
+**useAxios** 
+
+Hook para pegar instancia do axios. Principal função dela é adicionar ou nao o token na request quando o usuário estiver logado.
+
+```javascript
+  const axios = useAxios()
+```
+
+**useProducts** 
+
+Hook utilizado para fazer a chamada na api e obter as informações dos produtos vinculados ao companyId, o padrão de resposta segue o do [React-Query](https://tanstack.com/query/v4/docs/reference/useQuery).
+
+```javascript
+  const {
+  data,
+  dataUpdatedAt,
+  error,
+  errorUpdatedAt,
+  failureCount,
+  failureReason,
+  isError,
+  isFetched,
+  isFetchedAfterMount,
+  isFetching,
+  isPaused,
+  isLoading,
+  isLoadingError,
+  isPlaceholderData,
+  isPreviousData,
+  isRefetchError,
+  isRefetching,
+  isStale,
+  isSuccess,
+  refetch,
+  remove,
+  status,
+  fetchStatus
+  } = useProducts()
+```
+
+
+## Suporte
+
+Para mais informações, entre em contato via email suporte@w3block.io, ou caso prefira, crie sua PR ou deixe sua dúvida pelo próprio Github .
+

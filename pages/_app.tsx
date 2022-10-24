@@ -1,9 +1,5 @@
 import '@w3block/w3block-ui-sdk/dist/style.css';
 import '../src/modules/core/styles/globals.css';
-import '../src/modules/home/components/Hero/styles/hero.css';
-import '../src/modules/home/components/about/styles/about.css';
-import '../src/modules/home/components/Tokens/styles/Tokens.css';
-import '../src/modules/home/components/Possibilities/styles/possibilities.css';
 
 import { FC, useRef } from 'react';
 import {
