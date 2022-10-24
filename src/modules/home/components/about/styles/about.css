@@ -1,0 +1,68 @@
+.background-about{
+  background-image: linear-gradient(270deg, rgba(16, 51, 91, 1) , rgba(16, 51, 91, 1) 10%, #1d2442);
+  background-image: -moz-linear-gradient(270deg, rgba(16, 51, 91, 1) , rgba(16, 51, 91, 1) 10%, #1d2442);
+  background-image: -webkit-linear-gradient(270deg, rgba(16, 51, 91, 1) , rgba(16, 51, 91, 1) 10%, #1d2442);
+}
+
+.background-faq{
+  background-image: linear-gradient(270deg, rgba(16, 51, 91, 0.1) , rgba(16, 51, 91, 1) 10%, #1d2442);
+  background-image: -moz-linear-gradient(270deg, rgba(16, 51, 91, 0.1) , rgba(16, 51, 91, 1) 10%, #1d2442);
+  background-image: -webkit-linear-gradient(270deg, rgba(16, 51, 91, 0.1) , rgba(16, 51, 91, 1) 10%, #1d2442);
+}
+
+.big-bg{
+  opacity: 0.1;
+  transform: translate(150px, 0px);
+  position: absolute;
+  z-index: 0;
+  object-fit: contain;
+  height: 900px;
+  width: 400px;
+}
+
+.small-bg{
+  opacity: 0.5;
+  height: 500px;
+  width: 300px;
+  object-fit: contain;
+  transform: translate(0, 40%);
+  z-index: 1;
+  position: absolute;
+}
+
+.overlay-text{
+  background-image: linear-gradient(270deg, rgba(16, 51, 91, 0.0) , rgba(23, 45, 80, 0.9), #1a2849 90%);
+  background-image: -moz-linear-gradient(270deg, rgba(16, 51, 91, 0.0) , rgba(23, 45, 80, 0.9), #1a2849 90%);
+  background-image: -webkit-linear-gradient(270deg, rgba(16, 51, 91, 0.0) , rgba(23, 45, 80, 0.9) , #1a2849 90%);
+}
+
+
+@media (max-width: 760px) {
+  .big-bg{
+    opacity: 0.1;
+    transform: translate(0, 0px);
+    position: absolute;
+    z-index: 0;
+    object-fit: contain;
+    height: 900px;
+  }
+  
+  .small-bg{
+    opacity: 0.5;
+    height: 500px;
+    object-fit: contain;
+    transform: translate(0, 40%);
+    z-index: 1;
+    position: absolute;
+  }
+  .background-faq{
+    background-image: linear-gradient(270deg, rgba(16, 51, 91, 0.1) , rgba(16, 51, 91, 1) 1%, #1d2442);
+    background-image: -moz-linear-gradient(270deg, rgba(16, 51, 91, 0.1) , rgba(16, 51, 91, 1) 1%, #1d2442);
+    background-image: -webkit-linear-gradient(270deg, rgba(16, 51, 91, 0.1) , rgba(16, 51, 91, 1) 1%, #1d2442);
+  }
+  .overlay-text{
+    background-image: linear-gradient(270deg, rgba(16, 51, 91, 0.0) , rgba(21, 46, 82, 0.9), #1c2645 90%);
+    background-image: -moz-linear-gradient(270deg, rgba(16, 51, 91, 0.0) , rgba(21, 46, 82, 0.9), #1c2645 90%);
+    background-image: -webkit-linear-gradient(270deg, rgba(16, 51, 91, 0.0) , rgba(21, 46, 82, 0.9) , #1c2645 90%);
+  }
+}

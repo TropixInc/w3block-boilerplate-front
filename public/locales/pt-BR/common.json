@@ -1,0 +1,6 @@
+{
+  "auth>mailConfirmation>tabTitle": "Confirmação de email",
+  "auth>signUp>tabTitle": "Cadastro",
+  "auth>requestPasswordChange>tabTitle": "Solicitar alteração de senha",
+  "auth>resetPassword>tabTitle": "Alterar senha"
+}

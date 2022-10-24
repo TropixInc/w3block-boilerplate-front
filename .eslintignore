@@ -1,0 +1,14 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+node_modules
+dist
+.vscode
+*.js
+tmp
+.next
+.husky
+assets
+public
+.git
+**/*.stories.tsx
