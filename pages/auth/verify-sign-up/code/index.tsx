@@ -1,16 +1,14 @@
-import { ResetPasswordTemplateSDK } from '@w3block/w3block-ui-sdk';
+import { SetCodeToCompleteProfileTemplate } from '@w3block/w3block-ui-sdk';
 import { GetStaticProps } from 'next';
-import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import TabPageTitle from '../../../../src/modules/core/components/TabPageTitle/TabPageTitle';
 
-const NewPassword = () => {
-  const [translate] = useTranslation();
+const VerifySignUpCodePage = () => {
   return (
     <>
-      <TabPageTitle pageTitle={translate('auth>resetPassword>tabTitle')} />
-      <ResetPasswordTemplateSDK />
+      <TabPageTitle pageTitle={'Verificar conta'} />
+      <SetCodeToCompleteProfileTemplate />
     </>
   );
 };
@@ -23,4 +21,4 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   };
 };
 
-export default NewPassword;
+export default VerifySignUpCodePage;

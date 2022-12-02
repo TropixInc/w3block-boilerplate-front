@@ -1,4 +1,4 @@
-import { ConnectWalletTemplate } from '@w3block/w3block-ui-sdk';
+import { ConnectWalletTemplateSDK } from '@w3block/w3block-ui-sdk';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -8,7 +8,7 @@ const SignIn = () => {
   return (
     <>
       <TabPageTitle pageTitle="Connect wallet" />
-      <ConnectWalletTemplate />
+      <ConnectWalletTemplateSDK />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { SignUpTemplate } from '@w3block/w3block-ui-sdk';
+import { SignUpTemplateSDK } from '@w3block/w3block-ui-sdk';
 import { GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -10,7 +10,7 @@ const SignUpPage = () => {
   return (
     <>
       <TabPageTitle pageTitle={translate('auth>signUp>tabTitle')} />
-      <SignUpTemplate />
+      <SignUpTemplateSDK />
     </>
   );
 };

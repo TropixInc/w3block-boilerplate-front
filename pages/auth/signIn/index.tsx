@@ -1,4 +1,4 @@
-import { SignInTemplate } from '@w3block/w3block-ui-sdk';
+import { SignInTemplateSDK } from '@w3block/w3block-ui-sdk';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -9,7 +9,7 @@ const SignIn = () => {
   return (
     <>
       <TabPageTitle pageTitle="Login" />
-      <SignInTemplate
+      <SignInTemplateSDK
         defaultRedirectRoute={AppRoutes.HOME}
         classes={{
           layoutBase: {

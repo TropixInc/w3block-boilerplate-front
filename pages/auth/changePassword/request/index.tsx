@@ -1,4 +1,4 @@
-import { RequestPasswordChangeTemplate } from '@w3block/w3block-ui-sdk';
+import { RequestChangePasswordTemplateSDK } from '@w3block/w3block-ui-sdk';
 import { GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -12,7 +12,7 @@ const RequestPasswordChangePage = () => {
       <TabPageTitle
         pageTitle={translate('auth>requestPasswordChange>tabTitle')}
       />
-      <RequestPasswordChangeTemplate />
+      <RequestChangePasswordTemplateSDK />
     </>
   );
 };
