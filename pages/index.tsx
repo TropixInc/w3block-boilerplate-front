@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         da w3block. O retorno desse hook é padrão do react-query.
       </p>
       <p>
-        Fique a vontade para abrir PR's e dar sugestões de melhorias, assim que
+        Fique a vontade para abrir PRs e dar sugestões de melhorias, assim que
         possível, serão analisadas pela equipe e respondidas.
       </p>
       <p>
