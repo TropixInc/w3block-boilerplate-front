@@ -9,14 +9,7 @@ const SignIn = () => {
   return (
     <>
       <TabPageTitle pageTitle="Login" />
-      <SignInTemplateSDK
-        defaultRedirectRoute={AppRoutes.HOME}
-        classes={{
-          layoutBase: {
-            logo: 'max-w-[130px] max-h-[130px]',
-          },
-        }}
-      />
+      <SignInTemplateSDK defaultRedirectRoute={AppRoutes.HOME} />
     </>
   );
 };
