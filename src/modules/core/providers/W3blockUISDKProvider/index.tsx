@@ -32,6 +32,8 @@ const W3blockUISdkProvider = ({ children }: Props) => {
           keyUrl: process.env.NEXT_PUBLIC_PIXWAY_KEY_API_URL ?? '',
           commerceUrl: process.env.NEXT_PUBLIC_COMMERCE_API_URL ?? '',
           pdfUrl: process.env.NEXT_PUBLIC_PDF_API_URL ?? '',
+          pollUrl: process.env.NEXT_PUBLIC_POLL_API_URL ?? '',
+          passUrl: process.env.NEXT_PUBLIC_PASS_API_URL ?? '',
         }}
         companyId={process.env.NEXT_PUBLIC_COMPANY_ID ?? ''}
         locale={(i18n.language as PixwayUISdkLocale) ?? 'pt-BR'}

@@ -1,4 +1,4 @@
-import { MailConfirmationTemplate } from '@w3block/w3block-ui-sdk';
+import { VerifySignUpTemplateSDK } from '@w3block/w3block-ui-sdk';
 import { GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -10,7 +10,7 @@ const VerifySignUpPage = () => {
   return (
     <>
       <TabPageTitle pageTitle={translate('auth>mailConfirmation>tabTitle')} />
-      <MailConfirmationTemplate />
+      <VerifySignUpTemplateSDK />
     </>
   );
 };
