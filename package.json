@@ -19,7 +19,7 @@
     "axios": "^0.27.2",
     "i18n-next": "^0.0.4",
     "next": "^12.2.5",
-    "next-auth": "^4.10.3",
+    "next-auth": "^4.20.1",
     "next-i18next": "^11.0.0",
     "next-videos": "1.5.0",
     "react": "18.2.0",
